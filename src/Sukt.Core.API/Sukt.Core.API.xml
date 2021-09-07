@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sukt.Core.API</name>
+    </assembly>
+    <members>
+        <member name="T:Sukt.Core.API.Controllers.AuditLogController">
+            <summary>
+            功能管理
+            </summary>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.AuditLogController.GetAuditLogPageAsync(Sukt.Module.Core.Entity.PageRequest)">
+            <summary>
+            分页获取审计日志
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.AuditLogController.GetAuditEntryListByAuditLogIdAsync(System.String)">
+            <summary>
+            获取操作实体列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.AuditLogController.GetAuditEntryListByAuditEntryIdAsync(System.String)">
+            <summary>
+            获取实体属性列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Sukt.Core.API.Controllers.FunctionController">
+            <summary>
+            功能管理
+            </summary>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.FunctionController.CreateAsync(Sukt.Core.Dtos.Function.FunctionInputDto)">
+            <summary>
+            创建功能
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.FunctionController.UpdateAsync(Sukt.Core.Dtos.Function.FunctionInputDto)">
+            <summary>
+            修改功能
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.FunctionController.DeleteAsyc(System.Nullable{System.Guid})">
+            <summary>
+            删除功能
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.FunctionController.GetFunctionPageAsync(Sukt.Module.Core.Entity.PageRequest)">
+            <summary>
+            异步得到功能分页
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.FunctionController.GetFunctionSelectListItemAsync">
+            <summary>
+            异步获取功能下拉框列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.HealthController.GetLiveness">
+            <summary>
+            健康监测通过liveness来探测微服务的存活性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.HealthController.GetReadiness">
+            <summary>
+            健康监测通过readiness来探测微服务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Sukt.Core.API.Controllers.IdentityController">
+            <summary>
+            身份认证管理
+            </summary>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityController.LoginAsync(Sukt.Core.Dtos.LoginIdentity.LoginInputDto)">
+            <summary>
+            登录
+            </summary>
+            <param name="loginDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ApiResourceController.CreateAsync(Sukt.Core.Dtos.IdentityServer4Dto.ApiResource.ApiResourceInputDto)">
+            <summary>
+            添加Api资源
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ApiResourceController.CreateApiResourceSecretAsync(Sukt.Core.Dtos.IdentityServer4Dto.SecretInputDto)">
+            <summary>
+            添加Api资源密钥
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ApiResourceController.CreateApiResourceScopesAsync(Sukt.Core.Dtos.IdentityServer4Dto.CommonInputDto)">
+            <summary>
+            添加Api资源范围
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ApiResourceController.GetJwtClaimTypeSelectItem">
+            <summary>
+            获取JwtClaimType类型集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ApiScopeController.CreateAsync(System.Collections.Generic.List{Sukt.Core.Dtos.IdentityServer4Dto.ApiScope.ApiScopeInputDto})">
+            <summary>
+            添加Api授权访问范围
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ClientController.CreateAsync(Sukt.Core.Dtos.IdentityServer4Dto.ClientInputDto)">
+            <summary>
+            添加客户端
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ClientController.GetLoadAsync(System.Nullable{System.Guid})">
+            <summary>
+            获取一个客户端
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ClientController.CreateSecretAsync(Sukt.Core.Dtos.IdentityServer4Dto.SecretInputDto)">
+            <summary>
+            添加客户端密钥
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ClientController.CreateClientScopeAsync(Sukt.Core.Dtos.IdentityServer4Dto.CommonInputDto)">
+            <summary>
+            添加客户端允许访问范围
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ClientController.CreatePostLogoutRedirectUriAsync(Sukt.Core.Dtos.IdentityServer4Dto.CommonInputDto)">
+            <summary>
+            添加客户端退出登录Uri
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ClientController.CreateRedirectUriAsync(Sukt.Core.Dtos.IdentityServer4Dto.CommonInputDto)">
+            <summary>
+            添加登录回调Uri
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IdentityServer4.ClientController.CreateCorsOriginAsync(Sukt.Core.Dtos.IdentityServer4Dto.CommonInputDto)">
+            <summary>
+            添加允许跨域
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.IMController.Login(System.String)">
+            <summary>
+            Login
+            </summary>
+            <param name="uid"></param>
+            <param name="pwd"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sukt.Core.API.Controllers.MenuController">
+            <summary>
+            菜单管理
+            </summary>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MenuController.CreateAsync(Sukt.Core.Dtos.Menu.MenuInputDto)">
+            <summary>
+            创建菜单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MenuController.UpdateAsync(Sukt.Core.Dtos.Menu.MenuInputDto)">
+            <summary>
+            修改菜单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MenuController.DeleteAsync(System.Guid)">
+            <summary>
+            删除菜单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MenuController.GetMenuTableAsync">
+            <summary>
+            获取表格菜单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MenuController.GetLoadFromMenuAsync(System.Guid)">
+            <summary>
+            根据Id加载菜单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MenuController.GetUserMenuTreeAsync">
+            <summary>
+            根据用户角色获取菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MenuFunctionController.AllocationMenuFunctionAsync(Sukt.Core.Dtos.MenuFunction.MenuFunctionInputDto)">
+            <summary>
+            分配菜单功能
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MenuFunctionController.GetLoadMenuFunctionAsync(System.Nullable{System.Guid})">
+            <summary>
+            获取用户角色
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Sukt.Core.API.Controllers.MultiTenantController">
+            <summary>
+            功能管理
+            </summary>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MultiTenantController.CreateAsync(Sukt.Core.Dtos.MultiTenant.MultiTenantInputDto)">
+            <summary>
+            创建租户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MultiTenantController.UpdateAsync(Sukt.Core.Dtos.MultiTenant.MultiTenantInputDto)">
+            <summary>
+            修改租户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MultiTenantController.LoadAsync(System.Nullable{System.Guid})">
+            <summary>
+            加载租户
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.MultiTenantController.GetLoadPageAsync(Sukt.Module.Core.Entity.PageRequest)">
+            <summary>
+            分页获获取租户
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sukt.Core.API.Controllers.OrganizationController">
+            <summary>
+            功能管理
+            </summary>
+        </member>
+        <member name="T:Sukt.Core.API.Controllers.RoleController">
+            <summary>
+            角色管理
+            </summary>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.RoleController.CreateAsync(Sukt.Core.Dtos.Identity.Role.RoleInputDto)">
+            <summary>
+            添加角色
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.RoleController.UpdateAsync(System.Guid,Sukt.Core.Dtos.Identity.Role.RoleInputDto)">
+            <summary>
+            修改角色
+            </summary>
+            <param name="input"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.RoleController.DeleteAsync(System.Guid)">
+            <summary>
+            删除角色
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.RoleController.GetPageAsync(Sukt.Module.Core.Entity.PageRequest)">
+            <summary>
+            分页获取角色
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.RoleController.AllocationRoleMenuAsync(Sukt.Core.Dtos.Identity.Role.RoleMenuInputDto)">
+            <summary>
+            角色分配权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Sukt.Core.API.Controllers.UpLoadController">
+            <summary>
+            文件上传
+            </summary>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.UpLoadController.Upload(Microsoft.AspNetCore.Http.IFormCollection)">
+            <summary>
+            文件分片上传接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Sukt.Core.API.Controllers.UserController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.UserController.CreateAsync(Sukt.Core.Dtos.UserInputDto)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.UserController.LoadUserFormAsync(System.Guid)">
+            <summary>
+            根据Id加载表单用户
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.UserController.UpdateAsync(System.Guid,Sukt.Core.Dtos.UserInputDto)">
+            <summary>
+            修改用户
+            </summary>
+            <param name="input"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.UserController.DeleteAsync(System.Guid)">
+            <summary>
+            删除用户
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.UserRoleController.AllocationUserRoleAsync(Sukt.Core.Dtos.Identity.UserRole.UserRoleInputDto)">
+            <summary>
+            用户分配角色
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sukt.Core.API.Controllers.UserRoleController.GetLoadUserRoleAsync(System.Nullable{System.Guid})">
+            <summary>
+            获取用户角色
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
